@@ -1,2 +1,3 @@
-let arr = [1, 2, 3];
-console.log(arr);
+"use strict";
+
+console.log("hello");
