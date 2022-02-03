@@ -190,7 +190,7 @@ body {
         flex: 0 0 150px;
     }
     .menu__item {
-        margin: 30px 10px;
+        margin: 30px 0px;
     }
 }
 
@@ -365,6 +365,14 @@ body {
     margin: 0px 0px 24px 0px;
 }
 
+.block-text__button {}
+
+@media (max-width: 767.98px) {
+    .block-text__title {
+        font-size: 34px;
+    }
+}
+
 
 /*-------------------------------------------------------------------------------------*/
 
@@ -393,22 +401,9 @@ body {
     background-color: #ec5863;
 }
 
-@media (max-width: 991.98) {
-    .get-started__container::before {
-        right: 185px;
-        border-radius: 20px 0px 0px 20px;
-    }
-}
-
-@media (max-width: 767.98) {
-    .get-started__container::before {
-        display: none;
-    }
-}
-
 .get-started__content {
     flex: 0 1 48%;
-    padding: 0px 0px 0px 20px;
+    padding: 0px 20px;
 }
 
 .get-started__block-text {
@@ -442,9 +437,9 @@ body {
 .video-get-started__icon:hover {}
 
 .video-get-started__body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: space-between; */
     padding: 0px 0px 0px 12px;
 }
 
@@ -458,7 +453,71 @@ body {
 .video-get-started__text {
     text-transform: uppercase;
     font-size: 9px;
-    line-height: 126%;
     color: rgba(0, 0, 0, 1);
+    line-height: 126%;
     letter-spacing: 2.65px;
 }
+
+@media (max-width: 991.98px) {
+    .get-started__container::before {
+        right: 185px;
+        border-radius: 20px 0px 0px 20px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .get-started__container {
+        padding: 100px 15px 30px 15px;
+    }
+    .get-started__image {
+        flex: 1 1 100%;
+        text-align: center;
+        padding: 30px 0;
+    }
+    .get-started__container::before {
+        /* left: 185px; */
+        display: none;
+    }
+    .get-started__block-text {
+        min-width: none;
+    }
+    .get-started__content {
+        flex: 1 1 100%;
+        padding: 0;
+    }
+    .get-started__video {
+        padding: 0;
+    }
+}
+
+
+/* -----------------------------------второй блок "Stay safe with GoCorona." -------------------------------------------*/
+
+.stay-safe {
+    padding: 80px 0;
+}
+
+.stay-safe__container {
+    display: flex;
+    align-items: center;
+}
+
+.stay-safe__media {
+    flex: 0 1 50%;
+    padding: 0px 0px 0px 47px;
+}
+
+.stay-safe__content {
+    flex: 0 1 50%;
+}
+
+.stay-safe__block-text {}
+
+.media-stay-safe {
+    width: 373px;
+    position: relative;
+    text-align: center;
+    position: relative;
+}
+
+.media-stay-safe__image {}
