@@ -608,6 +608,7 @@
     
     .experts__content {
         flex: 0 1 50%;
+        padding: 0px 20px 0px 0px;
     }
     
     .experts__video {
@@ -623,6 +624,16 @@
         top: 0;
         left: 0;
         object-fit: cover;
+    }
+    
+    @media (max-width: 767.98px) {
+        .experts__body {
+            align-items: stretch;
+            flex-direction: column;
+        }
+        .experts__video {
+            padding: 0px 0px 50% 0px;
+        }
     }
     
     .statistics-experts__body {
@@ -674,7 +685,7 @@
     
     .body-statistics-experts__item {
         flex: 1 1 auto;
-        text-align: center;
+        text-align: absolute;
     }
     
     .body-statistics-experts__item:last-child {
@@ -683,18 +694,22 @@
     
     .body-statistics-experts__value {
         font-weight: 700;
+        padding: 0px 130px 0px 10px;
         font-size: 36px;
         line-height: 1.2;
         letter-spacing: 1.5px;
         color: #ec5863;
         margin-bottom: 5px;
+        text-shadow: 0px 4px 1px rgba(0, 0, 0, 0.15);
     }
     
     .body-statistics-experts__text {
         font-weight: bold;
+        padding: 0px 10px 0px 0px;
         font-size: 11px;
         line-height: 1.8;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         text-transform: uppercase;
         color: #000000;
+        text-shadow: 0px 4px 1px rgba(0, 0, 0, 0.15);
     }
