@@ -247,15 +247,17 @@
     .button:hover {
         background-color: #e93c48;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transition: .4s ease-out;
+        transition-delay: 0.5s;
     }
     
     .button__blue {
-        background: #4285F4;
+        background: #1f62ce;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
     
     .button__blue:hover {
-        background: #1f62ce;
+        background: #4285F4;
         /* transition: width 0.3s ease-out; */
     }
     /*small-menu-----------------------------------------------------------------------------------*/
@@ -544,6 +546,13 @@
         box-shadow: 2px 4px 32px rgba(0, 0, 0, 0.50);
     }
     
+    .media-stay-safe__item:hover {
+        background-color: #e93c48;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transition: .4s ease-out;
+        transition-delay: 0.5s;
+    }
+    
     .media-stay-safe__item_1 {
         top: 0;
         left: 0;
@@ -665,6 +674,13 @@
         background-color: #ec5863;
         border-radius: 30px;
         box-shadow: 2px 4px 32px rgba(0, 0, 0, 0.50);
+    }
+    
+    .statistics-experts__decor:hover {
+        background-color: #e93c48;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transition: .4s ease-out;
+        transition-delay: 0.5s;
     }
     
     .statistics-experts__decor_1 {
@@ -801,6 +817,13 @@
         line-height: 138.5%;
         color: #000;
         margin: 0px 0px 4px 0px;
+    }
+    
+    .item-healthcare__title:hover {
+        background-color: #e93c48;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transition: .4s ease-out;
+        transition-delay: 0.5s;
     }
     
     .item-healthcare__text {
