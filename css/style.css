@@ -157,10 +157,11 @@
         left: 0;
         right: 0;
         width: 0;
-        height: 2px;
-        background-color: #EC5863;
+        height: 1px;
+        background-color: rgb(194, 185, 185);
+        border: 1px;
         content: "";
-        transition: width 0.3s ease-out;
+        transition: width 0.6s ease-out;
     }
     
     .menu__link:hover:after,
@@ -246,18 +247,21 @@
     
     .button:hover {
         background-color: #e93c48;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
         transition: .4s ease-out;
         transition-delay: 0.5s;
+        box-shadow: none;
     }
     
     .button__blue {
-        background: #1f62ce;
+        background: #4285F4;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
     
     .button__blue:hover {
-        background: #4285F4;
+        background: #1f62ce;
+        /* box-shadow: 2px 4px 32px rgba(0, 0, 0, 0.50); */
+        box-shadow: none;
         /* transition: width 0.3s ease-out; */
     }
     /*small-menu-----------------------------------------------------------------------------------*/
@@ -548,9 +552,10 @@
     
     .media-stay-safe__item:hover {
         background-color: #e93c48;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
         transition: .4s ease-out;
         transition-delay: 0.5s;
+        box-shadow: none;
     }
     
     .media-stay-safe__item_1 {
@@ -681,6 +686,7 @@
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         transition: .4s ease-out;
         transition-delay: 0.5s;
+        box-shadow: none;
     }
     
     .statistics-experts__decor_1 {
@@ -817,13 +823,6 @@
         line-height: 138.5%;
         color: #000;
         margin: 0px 0px 4px 0px;
-    }
-    
-    .item-healthcare__title:hover {
-        background-color: #e93c48;
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        transition: .4s ease-out;
-        transition-delay: 0.5s;
     }
     
     .item-healthcare__text {
