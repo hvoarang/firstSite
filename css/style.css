@@ -375,6 +375,7 @@
         align-items: center;
         flex-wrap: wrap;
         position: relative;
+        filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.25));
     }
     
     .get-started__container::before {
@@ -412,6 +413,7 @@
     
     .get-started__image img {
         max-width: 100%;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
     
     .video-get-started {
@@ -628,6 +630,7 @@
         top: 0;
         left: 0;
         object-fit: cover;
+        box-shadow: 2px 4px 32px rgba(0, 0, 0, 1.50);
     }
     
     @media (max-width: 767.98px) {
@@ -748,9 +751,11 @@
     }
     /* ================================================================ 3q Block ======================================================================= */
     
-    .healthcare {}
+    .healthcare {
+        padding: 80px 0px 30px 0px;
+    }
     
-    .healthcare__conteiner {}
+    .healthcare_container {}
     
     .healthcare__block-text {
         margin: 0px 0px 45px 0px;
@@ -764,7 +769,7 @@
     }
     
     .healthcare__column {
-        margin: 0 auto;
+        position: relative;
         padding: 0px 36px;
         flex: 0 1 33.333%;
     }
@@ -772,6 +777,9 @@
     .healthcare__item {}
     
     .item-healthcare {
+        height: 100%;
+        position: relative;
+        z-index: 2;
         background: #FFFFFF;
         box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.55);
         border-radius: 8px;
@@ -784,9 +792,10 @@
     
     .item-healthcare__icon {
         margin: 0px 0px 58px 0px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
     
-    .item-healthcare__titel {
+    .item-healthcare__title {
         font-weight: 700;
         font-size: 16px;
         line-height: 138.5%;
@@ -796,4 +805,100 @@
     
     .item-healthcare__text {
         line-height: 138.5%;
+    }
+    
+    .healthcare_column_1::before,
+    .healthcare_column_1::after {
+        content: "";
+        position: absolute;
+        background-color: #ec5863;
+        border-radius: 16px;
+        box-shadow: 2px 4px 32px rgba(0, 0, 0, 0.50);
+    }
+    
+    .healthcare_column_1::before {
+        width: 65px;
+        height: 65px;
+        bottom: -35px;
+        left: 15px;
+        transform: rotate(-30deg);
+    }
+    
+    .healthcare_column_1::after {
+        width: 97px;
+        height: 97px;
+        top: 35px;
+        right: -10px;
+        border-radius: 30px;
+        transform: rotate(30deg);
+    }
+    
+    .healthcare_column_2::after {
+        content: "";
+        position: absolute;
+        background-color: #ec5863;
+        width: 127px;
+        height: 127px;
+        bottom: -35px;
+        right: -35px;
+        border-radius: 30px;
+        transform: rotate(55deg);
+        box-shadow: 2px 4px 32px rgba(0, 0, 0, 0.50);
+    }
+    
+    .healthcare_column_3::after {
+        content: "";
+        position: absolute;
+        background-color: #ec5863;
+        width: 65px;
+        height: 65px;
+        top: -25px;
+        right: 0px;
+        border-radius: 16px;
+        transform: rotate(45deg);
+        box-shadow: 2px 4px 32px rgba(0, 0, 0, 0.50);
+    }
+    
+    @media (max-width: 1087px) {
+        .healthcare__column {
+            padding: 0px 15px;
+        }
+    }
+    
+    @media (max-width: 991.98px) {
+        .healthcare {
+            padding: 30px 0px 30px 0px;
+        }
+        .healthcare__items {
+            flex-direction: column;
+        }
+        .healthcare__column:not(:last-child) {
+            margin: 0px 0px 25px 0px;
+        }
+    }
+    /* =============================================footer===================================== */
+    
+    .footer {
+        padding: 45px 0px;
+    }
+    
+    .footer__container {}
+    
+    .footer__items {
+        display: flex;
+        column-gap: 50px;
+        row-gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer__item {}
+    
+    @media (max-width: 500px) {
+        .footer {
+            padding: 30px 0;
+        }
+        .footer__items {
+            flex-direction: column;
+        }
     }
